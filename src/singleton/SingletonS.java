@@ -17,7 +17,7 @@ public class SingletonS {
             if(s == null){
                 // Checks if the instance 's' is null, meaning no instance of SingletonS has been created yet.
 
-                s = new SingletonS();
+                 s = new SingletonS();
                 // If 's' is null, a new instance of SingletonS is created and assigned to 's'.
             }
         }
