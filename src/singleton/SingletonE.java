@@ -1,8 +1,8 @@
 package singleton;
 
-public class SingletonE {
+public final class SingletonE {
 
-    static SingletonE s = new SingletonE();  //Creating Object at Class level at time like this
+    static SingletonE s = new SingletonE();  //Creating Object at Class level at time
 
   private  SingletonE() {    // make constructor private for Singleton
     }

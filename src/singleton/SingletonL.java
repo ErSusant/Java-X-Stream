@@ -1,6 +1,6 @@
 package singleton;
 
-public class SingletonL {
+public  final class SingletonL {  // Inheritance is not allowed
 
 static SingletonL s=null;   //Lazy Initialization
 
@@ -13,7 +13,7 @@ private SingletonL(){}
     return s;
     }
 }
-class Lazy{
+class Lazy  {
     public static void main(String[] args) {
         SingletonL instance = SingletonL.getInstance();
         System.out.println(instance.hashCode());
