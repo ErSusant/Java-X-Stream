@@ -1,6 +1,6 @@
 class Solution {
 
-    public int[] plusOne(int[] digits) {
+    public static int[] plusOne(int[] digits) {
         int n = digits.length;
 
         // Traverse the array from the last digit to the first
@@ -22,11 +22,11 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+
 
         // Test Case 1: Normal Case
         int[] digits1 = {1, 2, 3,9};
-        int[] result1 = solution.plusOne(digits1);
+        int[] result1 = Solution.plusOne(digits1);
         System.out.print("Result 1: ");
         for (int num : result1) {
             System.out.print(num);
@@ -35,7 +35,7 @@ class Solution {
 
         // Test Case 2: Carry Over Case
         int[] digits2 = {1, 9, 9};
-        int[] result2 = solution.plusOne(digits2);
+        int[] result2 = Solution.plusOne(digits2);
         System.out.print("Result 2: ");
         for (int num : result2) {
             System.out.print(num);
@@ -44,7 +44,7 @@ class Solution {
 
         // Test Case 3: All Nines
         int[] digits3 = {9, 9, 9};
-        int[] result3 = solution.plusOne(digits3);
+        int[] result3 = Solution.plusOne(digits3);
         System.out.print("Result 3: ");
         for (int num : result3) {
             System.out.print(num);
